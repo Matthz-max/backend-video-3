@@ -25,6 +25,83 @@ Este é o backend do projeto **GYM**, desenvolvido com **Spring Boot** e **MySQL
 - ✅ Lombok  
 
 ---
+# ✅ Como Ativar o Annotation Processing no Eclipse IDE
+
+> ⚠️ Necessário apenas se você estiver usando **Eclipse IDE** 
+
+---
+
+## 🎯 Passo 1: Acessar as Propriedades do Projeto
+
+➡️ Clique com o **botão direito no nome do projeto**, depois em **`Properties`**:
+
+<img src="https://github.com/user-attachments/assets/76063295-c822-4f24-852d-662f86c83b18" width="400" />
+
+---
+
+## 🎯 Passo 2: Ativar o Annotation Processing
+
+➡️ No menu lateral, clique em **`Java Compiler`** → **`Annotation Processing`**.
+
+➡️ Ative as opções conforme a imagem:
+
+✅ `Enable project specific settings`  
+✅ `Enable annotation processing`  
+✅ `Enable annotation processing in editor` (se aparecer)
+
+<img src="https://github.com/user-attachments/assets/e215bedf-8f7e-4d9b-90fd-971627fe268e" width="400" />
+
+---
+
+## 🎯 Passo 3: Salvar e Fechar
+
+➡️ Clique em **`Apply and Close`**
+
+✅ O Eclipse pode pedir para **rebuildar o projeto**. Se sim, aceite.
+
+---
+
+## 🎯 Passo 4: Rodar o Maven Clean
+
+➡️ Clique com **botão direito no projeto** → **`Run As`** → **`Maven clean`**
+
+<img src="https://github.com/user-attachments/assets/f437c2ba-49a1-4c9c-aebd-1fdcc945f6d1" width="400" />
+
+✅ Quando der certo, o console mostrará algo parecido com:
+```
+BUILD SUCCESS
+```
+
+---
+
+## 🎯 Passo 5: Rodar o Maven Install (Build do Projeto)
+
+➡️ Novamente com **botão direito no projeto** → **`Run As`** → **`Maven build...`**
+
+➡️ Na janela que abrir, digite **`install`** no campo **Goals**.
+
+<img src="https://github.com/user-attachments/assets/6141eca1-08a4-4cd0-b660-5d5d80e89727" width="400" />
+
+Depois clique em **`Apply and Run`**.
+
+✅ Resultado esperado no console:
+
+<img src="https://github.com/user-attachments/assets/119e58d6-4fb0-41cc-ab6b-c711636adb96" width="400" />
+
+
+```
+BUILD SUCCESS
+```
+
+---
+
+## ✅ Pronto!  
+Agora o Projeto vai rodar tranquilo
+
+
+
+
+
 
 ## ⚙️ Como rodar o projeto localmente
 ### Pré-requisitos
