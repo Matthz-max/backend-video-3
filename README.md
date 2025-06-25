@@ -158,6 +158,118 @@ src
 └── test
 
 ```
+# Documentação (Swagger deu erro de dependecia)
+
+# 📌 API - Registros de Academia (RecordsController)
+
+Base URL:  
+http://localhost:8080/gym
+
+---
+
+## ✅ Endpoints:
+
+### 1. Listar todos os registros
+- **Método:** GET  
+- **URL:** `/gym/records`  
+- **Descrição:** Retorna todos os registros de academia.  
+- **Resposta:**  
+200 OK  
+Exemplo de retorno:
+[
+  {
+    "id": 1,
+    "exercise": "Supino",
+    "weight": 80,
+    "date": "2025-06-25T15:30:00"
+  }
+]
+
+---
+
+### 2. Criar um novo registro
+- **Método:** POST  
+- **URL:** `/gym/records`  
+- **Descrição:** Cria um novo registro de academia.  
+- **Body Exemplo (JSON):**
+{
+  "exercise": "Supino",
+  "weight": 80,
+  "date": "2025-06-25T15:30:00"
+}
+- **Resposta:**  
+201 Created  
+Retorna o registro criado.
+
+---
+
+### 3. Buscar um registro por ID
+- **Método:** GET  
+- **URL:** `/gym/records/{id}`  
+- **Descrição:** Retorna um registro específico pelo ID.  
+- **Exemplo:**  
+GET `/gym/records/1`  
+- **Resposta:**  
+200 OK  
+Exemplo de retorno:
+{
+  "id": 1,
+  "exercise": "Supino",
+  "weight": 80,
+  "date": "2025-06-25T15:30:00"
+}
+
+---
+
+### 4. Atualizar um registro (completo)
+- **Método:** PUT  
+- **URL:** `/gym/records/{id}`  
+- **Descrição:** Atualiza todos os campos de um registro existente.  
+- **Body Exemplo (JSON):**
+{
+  "exercise": "Agachamento",
+  "weight": 100,
+  "date": "2025-06-25T16:00:00"
+}
+- **Resposta:**  
+200 OK  
+Retorna o registro atualizado.
+
+---
+
+### 5. Atualizar um registro (parcial)
+- **Método:** PATCH  
+- **URL:** `/gym/records/{id}`  
+- **Descrição:** Atualiza apenas os campos enviados de um registro.  
+- **Body Exemplo (JSON):**
+{
+  "weight": 90
+}
+- **Resposta:**  
+200 OK  
+Retorna o registro atualizado.
+
+---
+
+### 6. Deletar um registro
+- **Método:** DELETE  
+- **URL:** `/gym/records/{id}`  
+- **Descrição:** Deleta o registro de academia com o ID informado.  
+- **Resposta:**  
+200 OK  
+Retorna o registro deletado.
+
+---
+
+## ✅ Observações finais:
+- Todos os endpoints usam validação com `@Valid`.
+- Os códigos de resposta seguem o padrão REST (200, 201, etc).
+- Formato de datas: `ISO 8601` (Exemplo: `2025-06-25T15:30:00`).
+
+
+
+
+
   # 🧪 Testes com Postman
 
 <div align="center"> 
