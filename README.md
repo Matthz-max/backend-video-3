@@ -101,8 +101,9 @@ Agora o Projeto vai rodar tranquilo
 # Banco de dados
 
 é necessario ter um database para isso entre no workbeach, e escreve esse comando assim "create database backenddb" como a imagem abaixo demonstra.
-![image](https://github.com/user-attachments/assets/8c8cbfed-4455-49d0-aa86-6fd999057477)
-![image](https://github.com/user-attachments/assets/8c8cbfed-4455-49d0-aa86-6fd999057477)
+
+<img src="https://github.com/user-attachments/assets/8c8cbfed-4455-49d0-aa86-6fd999057477" width="400" />
+ 
  
 
 ## ⚙️ Como rodar o projeto localmente
